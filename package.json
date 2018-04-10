@@ -1,0 +1,26 @@
+{
+	"name": "resortAugmentedReality",
+	"version": "1.0.0",
+	"author": "Matt Mapleston <matt@chanzachanzo.com>",
+	"description": "Web based augmented reality",
+	"contributors": [
+		{
+			"name": "Matt Mapleston",
+			"email": "matt@chanzachanzo.com"
+		}
+	],
+	"repository": {
+		"type": "git",
+		"url": ""
+	},
+	"license": "",
+	"dependencies": {
+		"express": "^4.16.3",
+		"fs": "0.0.1-security",
+		"http": "0.0.0",
+		"https": "^1.0.0"
+	},
+	"scripts": {
+		"start": "./server.js"
+	}
+}
