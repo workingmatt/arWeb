@@ -1,10 +1,15 @@
 var http = require('http');
 var https = require('https');
 var fs = require('fs');
+var ip = require('ip');
+var host = ip.address(); //IP address of server changes with DHCP
+var port = 2019;
+
 
 var options = {
 	key: fs.readFileSync(__dirname+'/fcms-key.pem'),
 	cert: fs.readFileSync(__dirname+'/fcms-cert.pem'),
+	ca: fs.readFileSync(__dirname+'/certrequest.csr'),
 	requestCert: false,
 	rejectUnauthorized: false
 };
@@ -13,14 +18,15 @@ var express = require('express');
 var app = express();
 var server = https.createServer(options, app);
 
-
-//http handles incoming requests and pipes them to express
+//app is the event listener
+app.use(express.static(__dirname+'/public'));
 
 app.get('/', function(req,res){
 	res.sendFile(__dirname+'/index.html');
 });
 
-server.listen(2018, '192.168.150.37');
+server.listen(port, host);
+console.log("Server listening on "+host+":"+port)
 
-console.log("Server running at port 2018");
+
 
