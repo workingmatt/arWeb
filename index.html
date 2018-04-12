@@ -8,38 +8,41 @@
 <body>
 
 <!--
-	<a-scene embedded arjs>
-		<a-box position='0 0.5 0' material='opacity: 0.5;' color='#EF2D5E'></a-box>
-		<a-marker-camera preset='hiro'></a-marker-camera>
-	</a-scene>
-	
-	<a-scene embedded arjs>
-		<a-sphere position='0 0.5 0' radius='0.5' material='opacity: 0.5;' color='#00FF00'></a-sphere>
-		<a-marker-camera preset='hiro'></a-marker-camera>
-	</a-scene>
+	<a-assets>
+		<a-asset-item id='wolf' src='Wolf.obj'></a-asset-item>
+	</a-assets>
 
-
-	<a-scene embedded arjs>
-		<a-sphere position='0 0.5 0' radius='0.5' material='opacity: 0.6;' color='#FF0000'></a-sphere>
-		<a-marker-camera type='pattern' patternURL='1001.png'></a-marker-camera>
-	</a-scene>
-
-	
-
+	<a-marker type='pattern' url='pattern.patt'>
+		<a-obj-model src="#wolf" scale="0.01 0.01 0.01"></a-obj-model>
+	</a-marker>
 -->
+
 	<a-scene embedded arjs>
+
+		<a-assets>
+			<img id='sphereTexture' src='Hiro_marker_ARjs.png'>
+			<img id='cylinderTexture' src='kanji.png'>
+			<img id='boxTexture' src='1001.png'>
+		</a-assets>
+
 		<a-marker preset='hiro'>
-			<a-sphere position='0 0.5 0' radius='0.5' material='opacity: 0.6;' color='#FF0000'></a-sphere>
+			<a-sphere src='#sphereTexture' position='0 0.5 0' radius='0.5' material='opacity: 0.6;' color='#FF0000'>
+				<a-animation attribute='rotation' to='0 360 0' direction='alternate' dur='5000' repeat='indefinite'></a-animation>
+			</a-sphere>
 		</a-marker>
 
 		<a-marker preset='kanji'>
-			<a-box position='0 0.5 0' material='opacity: 0.5;' color='#00FF00'></a-box>
+			<a-cylinder src='#cylinderTexture' position='0 0.2 -0.8' radius='0.5' height='1' material='opacity: 0.5;' color='#00FF00'>
+				<a-animation attribute='position' to='0 0.2 0.8' direction='alternate' dur='2000' repeat='indefinite'></a-animation>
+			</a-cylinder>
 		</a-marker>
-<!--
-		<a-marker type='pattern' patternUrl='public/1001.patt'>
-			<a-box position='0 0.5 0' material='opacity: 0.5;' color='#EF2D5E'></a-box>
+
+		<a-marker type='pattern' url='1001.patt'>
+			<a-box src='#boxTexture' position='0 0.5 0' width='0.5' material='opacity: 0.5;' color='#EF2D5E'>
+				<a-animation attribute='rotation' to='0 90 0' direction='alternate' dur='1000' repeat='indefinite'></a-animation>
+			</a-box>
 		</a-marker>
--->
+
 		<a-entity camera></a-entity>
 	</a-scene>
 
