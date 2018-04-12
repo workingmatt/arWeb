@@ -4,4 +4,3 @@ package-lock.json
 *.csr
 *.odp*
 .DS_Store
-*.txt

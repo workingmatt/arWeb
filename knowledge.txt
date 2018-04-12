@@ -1,0 +1,16 @@
+knowledge.txt
+
+First find: http://www.makery.info/en/2017/10/17/integrer-la-realite-augmentee-sur-le-web-en-dix-lignes-de-code/
+
+Jerome's AR.js github page. https://github.com/jeromeetienne/AR.js
+
+A-Frame documentation - how to construct the 3D scene. https://aframe.io/docs/0.8.0/guides/building-a-basic-scene.html#applying-an-image-texture
+
+Building a sketch webapp includes entry descriptions of the software components and uses React.js. https://marmelab.com/blog/2017/06/19/augmented-reality-html5.html
+
+AR.js marker training - how to make bespoke marker patterns. https://jeromeetienne.github.io/AR.js/three.js/examples/marker-training/examples/generator.html
+
+AR.js makes A-Frame easier to use.
+A-Frame does the augmented reality stuff.
+Three.js is the 3D engine.
+
