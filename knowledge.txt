@@ -14,3 +14,7 @@ AR.js makes A-Frame easier to use.
 A-Frame does the augmented reality stuff.
 Three.js is the 3D engine.
 
+SSL Certificates
+letsencrypt.com
+
+brew install certbot

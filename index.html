@@ -23,6 +23,8 @@
 			<img id='sphereTexture' src='Hiro_marker_ARjs.png'>
 			<img id='cylinderTexture' src='kanji.png'>
 			<img id='boxTexture' src='1001.png'>
+			<img id='resortTexture' src='resort-logo.jpg'>
+			<video id='countdown' autoplay loop="true" src='countdown.mp4'></video>
 		</a-assets>
 
 		<a-marker preset='hiro'>
@@ -38,8 +40,13 @@
 		</a-marker>
 
 		<a-marker type='pattern' url='1001.patt'>
-			<a-box src='#boxTexture' position='0 0.5 0' width='0.5' material='opacity: 0.5;' color='#EF2D5E'>
-				<a-animation attribute='rotation' to='0 90 0' direction='alternate' dur='1000' repeat='indefinite'></a-animation>
+			<a-box src='#countdown' position='0 0.5 0' width='0.5' material='opacity: 0.9;' color='#EF2D5E'>
+			</a-box>
+		</a-marker>
+
+		<a-marker type='pattern' url='resort.patt'>
+			<a-box src='#resortTexture' position='0 0.5 0' rotation='180 0 0' width='0.5' material='opacity: 1;' color='#EF2D5E'>
+				<a-animation attribute='width' to='2' direction='alternate' dur='500' repeat='indefinite'></a-animation>
 			</a-box>
 		</a-marker>
 

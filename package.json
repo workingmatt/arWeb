@@ -22,6 +22,6 @@
 		"ip": "^1.1.5"
 	},
 	"scripts": {
-		"start": "./server.js"
+		"start": "node ./server.js"
 	}
 }
