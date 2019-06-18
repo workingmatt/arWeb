@@ -25,7 +25,7 @@ app.get('/', function(req,res){
 	console.log("Got / route");
 	res.sendFile(__dirname+'/index.html');
 });
-
+console.log("here");
 server.listen(port, host);
 console.log("Server listening on "+host+":"+port)
 
