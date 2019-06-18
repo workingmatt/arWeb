@@ -22,6 +22,7 @@ var server = https.createServer(options, app);
 app.use(express.static(__dirname+'/public'));
 
 app.get('/', function(req,res){
+	console.log("Got / route");
 	res.sendFile(__dirname+'/index.html');
 });
 
