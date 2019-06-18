@@ -18,3 +18,7 @@ SSL Certificates
 letsencrypt.com
 
 brew install certbot
+
+
+POSSIBLE FIX FOR VIDEO AUTOPLAY
+https://github.com/jeromeetienne/AR.js/issues/249
