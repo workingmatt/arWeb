@@ -3,7 +3,7 @@ var https = require('https');
 var fs = require('fs');
 var ip = require('ip');
 var host = ip.address(); //IP address of server changes with DHCP
-var port = 2018;
+var port = process.env.PORT || 2018;
 
 
 var options = {

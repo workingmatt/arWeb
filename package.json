@@ -23,5 +23,8 @@
 	},
 	"scripts": {
 		"start": "node ./server.js"
+	},
+	"engines": {
+		"node": "11.6.0"
 	}
 }
