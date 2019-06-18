@@ -27,6 +27,11 @@ app.get('/', function(req,res){
 });
 console.log("here");
 server.listen(port, host);
+if (server){
+	console.log("server");
+} else {
+	console.log("no server");
+}
 console.log("Server listening on "+host+":"+port)
 
 
