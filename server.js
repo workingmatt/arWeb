@@ -16,7 +16,7 @@ var options = {
 
 var express = require('express');
 var app = express();
-var server = https.createServer(options, app);
+var server = http.createServer(app);
 
 //app is the event listener
 app.use(express.static(__dirname+'/public'));
