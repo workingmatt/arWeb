@@ -19,6 +19,9 @@ letsencrypt.com
 
 brew install certbot
 
+I moved this to a free heroku thing (in the cloud). My node code needed to be http only as heroku sorts out all the https before forwarding the traffic via internal http.
+Heroku user name is matt@chanzachanzo.com
+http://chanza-chanza-ar.herokuapp.com is the webpage.
 
 POSSIBLE FIX FOR VIDEO AUTOPLAY
 https://github.com/jeromeetienne/AR.js/issues/249
