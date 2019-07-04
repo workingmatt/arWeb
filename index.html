@@ -26,10 +26,11 @@
 			<img id='resortTexture' src='resort-logo.jpg'>
 			<img id='scream' src='scream.png'>
 			<video id='countdown' autoplay loop="true" src='countdown.mp4'></video>
+			<a-asset-item id="mask" src="mask.gltf"></a-asset-item>
 		</a-assets>
 
 		<a-marker type='pattern' url='diamondMarker.patt'>
-			<a-image src='#scream' side='double' rotation='-90 0 0'></a-image>
+			<a-entity gltf-model="#mask"></a-entity>
 		</a-marker>
 
 		<a-marker preset='hiro'>
@@ -58,7 +59,10 @@
 		<a-entity camera></a-entity>
 	</a-scene>
 
+<!--
 
+			<a-image src='#scream' side='double' rotation='-90 0 0'></a-image>
+-->
 </body>
 
 </html>
