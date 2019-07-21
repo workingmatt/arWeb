@@ -28,12 +28,11 @@
 			<video id='countdown' autoplay loop="true" src='countdown.mp4'></video>
 			<a-asset-item id='mask' src='hollow_mask/scene.gltf'></a-asset-item>
 			<a-asset-item id='maskobj' src='mask.obj'></a-asset-item>
-			<a-asset-item id='maskmtl' src='mask_low.mtl'></a-asset-item>
 		</a-assets>
 
 		<a-marker type='pattern' url='diamondMarker.patt'>
 			
-			<a-entity obj-model='#maskobj' mtl='#maskmtl' rotation='-90 0 0' position='0 0 1' scale='1.5 1.5 1.5' animation='property: rotation; to:360 360 0; dur: 15000; easing: linear; loop: true'>
+			<a-entity obj-model='#maskobj' rotation='-90 0 0' position='0 0 1' scale='1.5 1.5 1.5' animation='property: rotation; to:360 360 0; dur: 15000; easing: linear; loop: true'>
 			</a-entity>
 		</a-marker>
 
