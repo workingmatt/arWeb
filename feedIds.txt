@@ -1,0 +1,17 @@
+feedIds.txt
+
+List of curator.io feeds for The World Is Yours.
+
+Takashi Murakami: https://admin.curator.io/demo/		tak	5302cc00-a700-4fb3-ae86-43781467d170
+Jenny Saville: https://admin.curator.io/demo/			jen fe3637e0-84db-44f9-8fe7-c9b89f740f87
+David Hockney: https://admin.curator.io/demo/			dav b0717a06-d221-4d82-9617-2769ce320adb
+Ai WeiWei: https://admin.curator.io/demo/				wei ef9c2cc6-461c-4939-8405-320c8b74a02c
+Damien Hirst: https://admin.curator.io/demo/			dam 24ac2f52-2401-4a41-a536-783dd15b4e8d
+Yayoi Kusama: https://admin.curator.io/demo/			yay 2cef1cf4-2fed-419c-af36-9db5e35b7b61
+Jeff Koons: https://admin.curator.io/demo/				jef 6f3a7ea1-0c07-46b7-ab3a-7ae8045d72ff
+Cecily Brown: https://admin.curator.io/demo/			cec fe2dffb7-b6fb-4f57-b429-78744571f116
+Anselm Kiefer: https://admin.curator.io/demo/			ans d881fe93-fd1d-4add-9726-417141292667
+Kara Walker: https://admin.curator.io/demo/				kar 71c16368-4c5a-4026-b0d8-0d81ac9b3b5a
+Jean-Michel Othoniel: https://admin.curator.io/demo/	jea 6fec8eb6-97cc-49ec-a249-37a2c0373a2d
+
+
