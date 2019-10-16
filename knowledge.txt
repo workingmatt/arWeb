@@ -2,11 +2,26 @@
 
 
 15-10-2019 Taking over from Sam Burford.
-	Refresher on setup
+
+	Refresher on workflow
 		Connected to workingmatt/arWeb on GitHub only master branch.
-		git push origin master to GitHub
-		git push heroku master 
-		
+		Deploy to heroku using git https://devcenter.heroku.com/articles/git
+		git push heroku master
+		Go to https://chanza-chanzo-ar.herokuapp.com/ to see app in action.
+
+	I want to keep Kim's site going. Including the link from chanzachanzo.com for now.
+		So I will create a new heroku instance called the-world-is-yours.herokuapp.com
+		https://www.heroku.com/ and sign in
+		Add a new app called the-world-is-yours
+
+		git remote -v lists the remotes set up.
+		git remote rename heroku heroku-kim
+		heroku git:remote -a the-world-is-yours
+		git push origin master
+
+		https://the-world-is-yours.herokuapp.com/
+
+	
 
 The World Is Yours
 
@@ -34,7 +49,7 @@ brew install certbot
 
 I moved this to a free heroku thing (in the cloud). My node code needed to be http only as heroku sorts out all the https before forwarding the traffic via internal http.
 Heroku user name is matt@chanzachanzo.com
-http://chanza-chanza-ar.herokuapp.com is the webpage.
+https://chanza-chanza-ar.herokuapp.com is the webpage.
 
 POSSIBLE FIX FOR VIDEO AUTOPLAY
 https://github.com/jeromeetienne/AR.js/issues/249
