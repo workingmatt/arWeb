@@ -1,5 +1,18 @@
-knowledge.txt
 
+
+
+15-10-2019 Taking over from Sam Burford.
+	Refresher on setup
+		Connected to workingmatt/arWeb on GitHub only master branch.
+		git push origin master to GitHub
+		git push heroku master 
+		
+
+The World Is Yours
+
+------------------
+Kim Conway - no notes, see above.
+------------------
 First find: http://www.makery.info/en/2017/10/17/integrer-la-realite-augmentee-sur-le-web-en-dix-lignes-de-code/
 
 Jerome's AR.js github page. https://github.com/jeromeetienne/AR.js
