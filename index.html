@@ -27,7 +27,7 @@
 			<img id='scream' src='scream.png'>
 			<video id='countdown' autoplay loop="true" src='countdown.mp4'></video>
 			<a-asset-item id='Head2' src='head2/scene.gltf'></a-asset-item>
-
+  			<a-asset-item id="placeholder" src="https://raw.githubusercontent.com/aframevr/sample-assets/master/assets/images/space/earth_atmos_4096.jpg"></a-asset-item>
 		</a-assets>
 
 		<a-marker type='pattern' url='diamondMarker.patt'>
@@ -39,9 +39,18 @@
 		</a-marker>
 
 		<a-marker type='pattern' url='pattern-faceBitmap.patt'>
-			<a-sphere src='#sphereTexture' position='-3 0.5 -1' radius='0.5' material='opacity: 0.6;' color='#FF0000'>
-				<a-animation attribute='rotation' to='0 360 0' direction='alternate' dur='5000' repeat='indefinite'></a-animation>
-			</a-sphere>
+			<a-box material="opacity: 0" position="0 0.5 0" rotation="180 0 0">
+        	<a-sphere material="opacity: 0" animation="property: rotation; to:0 0 360; dur: 9000; easing: linear; loop: true">
+	          	<a-box position="0 2 0" scale="1 0.001 1"></a-box>
+				<a-box position="0 -2 0" scale="1 0.001 1"></a-box>
+				<a-box position="2 0 0" scale="1 0.001 1" rotation="0 0 90"></a-box>
+				<a-box position="-2 0 0" scale="1 0.001 1" rotation="0 0 90"></a-box>
+				<a-box position="1.5 -1.5 0" scale="1 0.001 1" rotation="0 0 45" src="#placeholder"></a-box>
+				<a-box position="1.5 1.5 0" scale="1 0.001 1" rotation="0 0 -45" src="#placeholder"></a-box>
+				<a-box position="-1.5 1.5 0" scale="1 0.001 1" rotation="0 0 45" src="#placeholder"></a-box>
+				<a-box position="-1.5 -1.5 0" scale="1 0.001 1" rotation="0 0 -45" src="#placeholder"></a-box>
+	        </a-sphere>
+			</a-box>
 		</a-marker>
 
 
