@@ -11,7 +11,7 @@ var server = http.createServer(app);
 var helpers = require('./helpers.js');
 
 var list = {
-	tak: "1",
+	tak: "5302cc00-a700-4fb3-ae86-43781467d170",
 	jen: "2",
 	dav: "3",
 	wei: "4",
@@ -33,7 +33,8 @@ app.get('/', function(req,res){
 app.get('/:key', (req,res)=>{
 	var key = req.params.key;
 	console.log(key);
-	helpers.test(res,key,list[key]);
+	//helpers.test(res,key,list[key]);
+	helpers.getArtist(res, key, list[key]);
 });
 
 server.listen(port, host);
