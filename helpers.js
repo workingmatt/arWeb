@@ -122,7 +122,6 @@ function downloadImage(url, objPost, index){
 		}).pipe(fileStream);
 
 		fileStream.on('close', function(){
-			console.log("here");
 			resolve();
 		});
 		fileStream.on('error', function(err){
