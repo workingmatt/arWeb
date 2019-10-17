@@ -39,7 +39,10 @@ app.post('/:key', (req,res)=>{
 	console.log("Server.js app.post /:key");
 	var key = req.params.key;
 	//helpers.test(res,key,list[key]);
-	helpers.getArtist(res, key, list[key]);
+	helpers.getArtist(res, key, list[key])
+		.then(function(v){
+			console.log("Done get artist "+key);
+		});
 });
 
 server.listen(port, host);
