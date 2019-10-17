@@ -11,8 +11,10 @@ module.exports = {
 	},
 
 	//Get raw json data from Curator.io feedId specified in server.js See feedIds.txt for list
-	getArtist(res, name, feedId){
+	getArtist: function(res, name, feedId){
 		var txt = name+":"+feedId;
+		var postArray = new Array();
+		postArray = [];
 
 		return new Promise(function(resolve, reject){
 			https.get('https://api.curator.io/v1/feeds/'+feedId+'/posts/?api_key=a750692d-1236-47c4-b108-69607e0e06af', function(resp){
@@ -22,7 +24,12 @@ module.exports = {
 				});
 				resp.on('end',function(){
 					console.log("Got data from "+name+" feed");
-					resolve(res.send(data));
+
+					getArtistInfo(data,postArray)
+						.then(function(ret){
+							console.log(postArray);
+							resolve(res.send(ret)); //resolve this getArtist promise
+						})
 					//console.log(data);
 				});
 				resp.on('error',function(err){
@@ -33,4 +40,16 @@ module.exports = {
 		});
 		res.send(txt);
 	}
+
+}
+
+//Translate feed into postArray
+function getArtistInfo(feed,postArray){
+	return new Promise(function(resolve,reject){
+		console.log("getArtistInfo:");
+		
+
+		postArray.push("poo");
+		resolve(feed,postArray);
+	});
 }
