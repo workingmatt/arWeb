@@ -12,7 +12,7 @@ var helpers = require('./helpers.js');
 
 var list = {
 	tak: "5302cc00-a700-4fb3-ae86-43781467d170",
-	jen: "2",
+	jen: "fe3637e0-84db-44f9-8fe7-c9b89f740f87",
 	dav: "3",
 	wei: "4",
 	dam: "5",
@@ -30,9 +30,14 @@ app.get('/', function(req,res){
 	res.sendFile(__dirname+'/index.html');
 });
 
-app.get('/:key', (req,res)=>{
+app.get('/test', function(req,res){
+	console.log("Server.js app.get /test");
+	res.sendFile(__dirname+'/test.html');
+})
+
+app.post('/:key', (req,res)=>{
+	console.log("Server.js app.post /:key");
 	var key = req.params.key;
-	console.log(key);
 	//helpers.test(res,key,list[key]);
 	helpers.getArtist(res, key, list[key]);
 });

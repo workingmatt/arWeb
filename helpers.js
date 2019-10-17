@@ -8,6 +8,7 @@ module.exports = {
 		res.send(txt);
 	},
 
+	//Get raw json data from Curator.io feedId specified in server.js See feedIds.txt for list
 	getArtist(res, name, feedId){
 		var txt = name+":"+feedId;
 		console.log("helpers.getImages: sending response: "+txt);
