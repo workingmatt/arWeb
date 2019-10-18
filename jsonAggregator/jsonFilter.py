@@ -2,28 +2,24 @@ import urllib.request
 import json
 import os
 import os.path
+import webbrowser
 pathCWD = os.getcwd()
-if os.path.isfile(f'{pathCWD}/seed.cfg') == False:
+if os.path.isfile(f'{pathCWD}/deps.cfg') == False:
+    apiKey = input('APIKEY: ')
     seed = input('SEED: ')
-    f = open(f'{pathCWD}/seed.cfg','w')
-    f.write(seed)
-    f.close()
-if os.path.isfile(f'{pathCWD}/apiKey.cfg') == False:
-    key = input('APIKEY: ')
-    f = open(f'{pathCWD}/apiKey.cfg', 'w')
-    f.write(key)
+    dictonary = {'apikey': apiKey,'seed':seed}
+    f = open('deps.cfg','w')
+    f.write(str(dictonary))
     f.close()
 imageArray = []
 indexArray = ['url1', 'url2', 'url3', 'url4', 'url5', 'url6', 'url7', 'url8', 'url9']
 failed = False
-f = open(f'{pathCWD}/seed.cfg', 'r')
+f = open(f'{pathCWD}/deps.cfg', 'r')
 r = f.read()
 f.close()
-seed = r
-f = open(f'{pathCWD}/apiKey.cfg', 'r')
-r = f.read()
-f.close()
-apiKey = r
+d = eval(r)
+seed = d['seed']
+apiKey = d['apikey']
 txt = urllib.request.urlopen(f'https://api.curator.io/v1/feeds/{seed}/posts/?api_key={apiKey}').read()
 my_json = txt.decode('utf-8')
 data = json.loads(my_json)
@@ -44,7 +40,7 @@ while x < 9:
         x += 1
     except IndexError:
         f += 1
-        if f > 100:
+        if f > 200:
             failed = True
             break
     index += 1
