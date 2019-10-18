@@ -3,14 +3,14 @@ import json
 import os
 import os.path
 pathCWD = os.getcwd()
-if os.path.isfile('seed.cfg') == False:
+if os.path.isfile(f'{pathCWD}/seed.cfg') == False:
     seed = input('SEED: ')
-    f = open('seed.cfg','w')
+    f = open(f'{pathCWD}/seed.cfg','w')
     f.write(seed)
     f.close()
-if os.path.isfile('apiKey.cfg') == False:
+if os.path.isfile(f'{pathCWD}/apiKey.cfg') == False:
     key = input('APIKEY: ')
-    f = open('apiKey.cfg', 'w')
+    f = open(f'{pathCWD}/apiKey.cfg', 'w')
     f.write(key)
     f.close()
 imageArray = []
