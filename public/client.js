@@ -1,8 +1,21 @@
 
 console.log("Top of client.js");
 
+//TODO error handling when response is empty
+//Delete all image folder contents
+//Rerun script
+
 refreshArtist("jen");
 refreshArtist("tak");
+refreshArtist("dav");
+refreshArtist("wei");
+refreshArtist("dam");
+refreshArtist("yay");
+refreshArtist("jef");
+refreshArtist("cec");
+refreshArtist("ans");
+refreshArtist("kar");
+refreshArtist("jea");
 
 function refreshArtist(name){
 	$(function(){

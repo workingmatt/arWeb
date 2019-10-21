@@ -11,6 +11,21 @@ module.exports = {
 		res.send(txt);
 	},
 
+	//TODO this doesn't work - do it manually!
+	checkFolders: function(list){
+		for(var artist in list){
+			var path = __dirname+"/public/images/"+artist+"/";
+			fs.access(path, function(err){
+				if(err){
+					fs.mkdir(path,function(err){
+						console.log("Error creating directory");
+						console.log(err);
+					});
+				}
+			});
+		}
+	},
+
 	//Get raw json data from Curator.io feedId specified in server.js See feedIds.txt for list
 	getArtist: function(res, name, feedId){
 		var txt = name+":"+feedId;
