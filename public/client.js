@@ -15,7 +15,7 @@ refreshArtist("jef");
 refreshArtist("cec");
 refreshArtist("ans");
 refreshArtist("kar");
-refreshArtist("jea");
+refreshArtist("ani");
 
 function refreshArtist(name){
 	$(function(){
