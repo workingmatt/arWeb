@@ -19,7 +19,7 @@ refreshArtist("ani");
 
 function refreshArtist(name){
 	$(function(){
-		var urlText = "http://"+location.host+'/'+name;
+		var urlText = "https://"+location.host+'/'+name;
 	console.log("here: "+urlText);
 		$.ajax({
 			type: 'POST',

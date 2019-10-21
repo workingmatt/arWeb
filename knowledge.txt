@@ -1,3 +1,5 @@
+heroku run bash --remote heroku
+Runs a shell on heroku so you can see any build errors.
 
 
 
