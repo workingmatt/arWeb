@@ -29,7 +29,7 @@ function refreshArtist(name){
 			},
 			success: function(data){
 				console.log("Ajax success: "+urlText);
-				handleFeedJson(data);
+				handleFeedJson(name);
 			},
 			stop: function(){
 				console.log("Ajax stop");
@@ -39,9 +39,12 @@ function refreshArtist(name){
 	})
 }
 
-function handleFeedJson(data){
-	console.log("client.js handleFeedJson "+data);
-	console.log(data);
-	console.log("****");
+function handleFeedJson(name){
+	setInterval(function(){
+		$("a-assets").append("<img id='"+name+"0' src='images/+"name"+/0.jpg'>");
+	},5000);
+	//console.log("client.js handleFeedJson "+data);
+	//console.log(data);
+	//console.log("****");
 
 }

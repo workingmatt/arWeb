@@ -2,4 +2,3 @@ node_modules/
 package-lock.json
 *.odp*
 .DS_Store
-public/images/
