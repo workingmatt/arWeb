@@ -35,7 +35,7 @@ function refreshArtist(name){
 		});
 	})
 	$('<a-assets>')		
-							.append('<p>'+"ahoy me hearties"+'</p>')
+		.append('<p>'+"ahoy me hearties"+'</p>');
 }
 
 function handleFeedJson(data){
