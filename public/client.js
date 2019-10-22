@@ -41,5 +41,7 @@ function refreshArtist(name){
 
 function handleFeedJson(data){
 	console.log("client.js handleFeedJson "+data);
+	console.log(data);
+	console.log("****");
 
 }
