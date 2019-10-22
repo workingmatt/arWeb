@@ -26,7 +26,8 @@ var list = {
 
 //app is the event listener
 app.use(express.static(path.join(__dirname+'/public')));
-app.use(express.static(path.join(__dirname+'/public/images/kar')));
+console.log("server.js: Done static");
+//app.use(express.static(path.join(__dirname+'/public/images/kar')));
 
 app.get('/', function(req,res){
 	res.sendFile(__dirname+'/index.html');
