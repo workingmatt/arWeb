@@ -36,7 +36,7 @@ function refreshArtist(name){
 			}
 		});
 		console.log("here");
-		$("<a-assets>").append("<p>ahoy me hearties</p>");
+		$("a-assets").append("<p>ahoy me hearties</p>");
 		console.log("there");
 	})
 }
