@@ -1,6 +1,7 @@
 var http = require('http');
 var fs = require('fs');
 var ip = require('ip');
+var path = require('path');
 var host = ip.address(); //IP address of server changes with DHCP
 var port = process.env.PORT || 2018;
 
@@ -24,7 +25,7 @@ var list = {
 	ani: "47ca63a5-892b-41cb-998a-9d0e46b58fd7"}
 
 //app is the event listener
-app.use(express.static(__dirname+'/public'));
+app.use(express.static(path.join(__dirname+'/public')));
 
 app.get('/', function(req,res){
 	res.sendFile(__dirname+'/index.html');
