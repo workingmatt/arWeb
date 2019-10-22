@@ -33,9 +33,10 @@ function refreshArtist(name){
 				console.log("Ajax stop");
 			}
 		});
-	});
+	})
 	$('<a-assets>')		
 		.append('<p>'+"ahoy me hearties"+'</p>');
+
 }
 
 function handleFeedJson(data){
