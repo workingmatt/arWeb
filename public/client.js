@@ -35,13 +35,11 @@ function refreshArtist(name){
 				console.log("Ajax stop");
 			}
 		});
-		console.log("here");
 		$("a-assets").append("<p>ahoy me hearties</p>");
-		console.log("there");
 	})
 }
 
 function handleFeedJson(data){
-	console.log("client.js handleFeedJson "+data.length);
+	console.log("client.js handleFeedJson "+data);
 
 }
