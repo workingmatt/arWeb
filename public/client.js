@@ -32,9 +32,10 @@ function refreshArtist(name){
 			stop: function(){
 				console.log("Ajax stop");
 			}
+			console.log("phere");
 		});
 		console.log("here");
-		$('<a-assets>').append('<p>'+"ahoy me hearties"+'</p>');
+		$('<a-assets>').append('<p>ahoy me hearties</p>');
 		console.log("there");
 	})
 }
