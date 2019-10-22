@@ -41,7 +41,7 @@ function refreshArtist(name){
 
 function handleFeedJson(name){
 	setInterval(function(){
-		$("a-assets").append("<img id='"+name+"0' src='images/+"name"+/0.jpg'>");
+		$("a-assets").append("<img id='"+name+"0' src='images/"+name+"/0.jpg'>");
 	},5000);
 	//console.log("client.js handleFeedJson "+data);
 	//console.log(data);
