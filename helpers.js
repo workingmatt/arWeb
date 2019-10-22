@@ -127,7 +127,7 @@ function getPostInfo(feed, name, i, postArray){
 function downloadImage(url, objPost, index){
 	return new Promise(function(resolve,reject){
 		// console.log("download "+url+" : "+objPost.artist+" : "+" : "+index);
-		let fileStream = fs.createWriteStream(__dirname+"/public/images/"+objPost.artist+"/"+index);
+		let fileStream = fs.createWriteStream(__dirname+"/public/images/"+objPost.artist+"/"+index+".jpg");
 		request(url, function(err,response,body){
 			if(err){
 				console.log("Error in downloadImage");
