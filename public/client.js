@@ -1,6 +1,4 @@
 
-console.log("Top of client.js");
-
 //TODO error handling when response is empty
 //Delete all image folder contents
 //Rerun script
@@ -20,10 +18,13 @@ refreshArtist("ani");
 function refreshArtist(name){
 	$(function(){
 		var urlText = "https://"+location.host+'/'+name;
-	console.log("here: "+urlText);
 		$.ajax({
 			type: 'POST',
 			url: urlText,
+			timeout: 0,								//no timeout
+			error: function(){						//https://stackoverflow.com/questions/3543683/determine-if-ajax-error-is-a-timeout
+				console.log("Ajax error");
+			},
 			success: function(data){
 				console.log("Ajax success: "+urlText);
 				handleFeedJson(data);
@@ -33,6 +34,8 @@ function refreshArtist(name){
 			}
 		});
 	})
+	$('<a-assets>')		
+							.append('<p>'+"ahoy me hearties"+'</p>')
 }
 
 function handleFeedJson(data){
