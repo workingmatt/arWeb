@@ -16,6 +16,8 @@ refreshArtist("kar");
 refreshArtist("ani");
 
 function refreshArtist(name){
+
+		console.log("refreshArtist");
 	$(function(){
 		var urlText = "https://"+location.host+'/'+name;
 		$.ajax({
