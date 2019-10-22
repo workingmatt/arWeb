@@ -2,7 +2,7 @@
 //TODO error handling when response is empty
 //Delete all image folder contents
 //Rerun script
-
+console.log("in client.js");
 refreshArtist("jen");
 refreshArtist("tak");
 refreshArtist("dav");
@@ -34,7 +34,6 @@ function refreshArtist(name){
 			stop: function(){
 				console.log("Ajax stop");
 			}
-			console.log("phere");
 		});
 		console.log("here");
 		$('<a-assets>').append('<p>ahoy me hearties</p>');
