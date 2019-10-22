@@ -33,7 +33,9 @@ function refreshArtist(name){
 				console.log("Ajax stop");
 			}
 		});
+		console.log("here");
 		$('<a-assets>').append('<p>'+"ahoy me hearties"+'</p>');
+		console.log("there");
 	})
 }
 
