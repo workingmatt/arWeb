@@ -50,8 +50,8 @@ function startImageLoop(name){
 	console.log("startImageLoop called");
 	setInterval(function(){
 		var box = document.getElementById(name);
-		console.log("seting attribute: from "+box.src+" to "+"#"+name+index);
-		box.src = "#"+name+index;
+		console.log("seting attribute: for "+box.tagName+" from "+box.src+" to "+"#"+name+index);
+		box.setAttribute('src', "#"+name+index);
 
 		console.log("set attribute: "+box.src);
 		index++;
