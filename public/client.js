@@ -18,8 +18,6 @@ refreshArtist("ani");
 var index = 0;
 var maxIndex = 5;
 function refreshArtist(name){
-
-		console.log("refreshArtist");
 	$(function(){
 		var urlText = "https://"+location.host+'/'+name;
 		$.ajax({
@@ -31,7 +29,7 @@ function refreshArtist(name){
 			},
 			success: function(data){
 				console.log("Ajax success: "+urlText);
-				handleFeedJson(name);
+				insertImgAssets(name);
 			},
 			stop: function(){
 				console.log("Ajax stop");
@@ -40,15 +38,23 @@ function refreshArtist(name){
 	})
 }
 
-async function handleFeedJson(name){
+async function insertImgAssets(name){
 		await sleep(5000);
 		for(var j=0;j<maxIndex;j++){
 			$("a-assets").append("<img id='"+name+j+"' src='images/"+name+"/"+j+".jpg'>");
 		}
-	//console.log("client.js handleFeedJson "+data);
-	//console.log(data);
-	//console.log("****");
+		startImageLoop(name);
+}
 
+function startImageLoop(name){
+	setInterval(function(){
+		var box = document.getElementById(name);
+		box.src = "#"+name+index;
+		index++;
+		if (index>maxIndex){
+			index = 0;
+		}
+	},5000);
 }
 
 function sleep(ms){
