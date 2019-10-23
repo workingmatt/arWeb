@@ -16,7 +16,7 @@ refreshArtist("kar");
 refreshArtist("ani");
 
 var index = 0;
-var maxIndex = 5;
+var maxIndex = 25;
 function refreshArtist(name){
 	$(function(){
 		var urlText = "https://"+location.host+'/'+name;
@@ -50,13 +50,11 @@ function startImageLoop(name){
 	console.log("startImageLoop called");
 	setInterval(function(){
 		var box = document.getElementById(name);
-		console.log("seting attribute: for "+box.tagName+" from "+box.src+" to "+"#"+name+index);
 		box.setAttribute('src', "#"+name+index);
-
-		console.log("set attribute: "+box.src);
-		index++;
 		if (index>maxIndex){
 			index = 0;
+		} else {
+			index++;
 		}
 	},5000);
 }
