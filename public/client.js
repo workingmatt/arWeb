@@ -2,7 +2,7 @@
 //TODO error handling when response is empty
 //Delete all image folder contents
 //Rerun script
-console.log("in client.js");
+
 refreshArtist("jen");
 refreshArtist("tak");
 refreshArtist("dav");
@@ -15,6 +15,8 @@ refreshArtist("ans");
 refreshArtist("kar");
 refreshArtist("ani");
 
+var index = 0;
+var maxIndex = 5;
 function refreshArtist(name){
 
 		console.log("refreshArtist");
@@ -41,7 +43,9 @@ function refreshArtist(name){
 
 function handleFeedJson(name){
 	setInterval(function(){
-		$("a-assets").append("<img id='"+name+"0' src='images/"+name+"/0.jpg'>");
+		for(int j=0;j<maxIndex;j++){
+			$("a-assets").append("<img id='"+name+j"' src='images/"+name+"/"+j+".jpg'>");
+		}
 	},5000);
 	//console.log("client.js handleFeedJson "+data);
 	//console.log(data);
