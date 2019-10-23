@@ -50,6 +50,7 @@ function startImageLoop(name){
 	console.log("startImageLoop called");
 	setInterval(function(){
 		var box = document.getElementById(name);
+		console.log("setting attribute");
 		box.src = "#"+name+index;
 		index++;
 		if (index>maxIndex){
