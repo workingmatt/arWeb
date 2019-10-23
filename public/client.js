@@ -37,18 +37,22 @@ function refreshArtist(name){
 				console.log("Ajax stop");
 			}
 		});
-		$("a-assets").append("<p>ahoy me hearties</p>");
 	})
 }
 
-function handleFeedJson(name){
-	setInterval(function(){
+async function handleFeedJson(name){
+		await sleep(5000);
 		for(var j=0;j<maxIndex;j++){
 			$("a-assets").append("<img id='"+name+j+"' src='images/"+name+"/"+j+".jpg'>");
 		}
-	},5000);
 	//console.log("client.js handleFeedJson "+data);
 	//console.log(data);
 	//console.log("****");
 
 }
+
+function sleep(ms){
+	return new Promise(resolve => setTimeout(resolve, ms));
+}
+
+
