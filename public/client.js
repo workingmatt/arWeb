@@ -47,6 +47,7 @@ async function insertImgAssets(name){
 }
 
 function startImageLoop(name){
+	console.log("startImageLoop called");
 	setInterval(function(){
 		var box = document.getElementById(name);
 		box.src = "#"+name+index;
