@@ -1,0 +1,171 @@
+newmtl arm_02
+Kd 0.784314 0.784314 0.784314
+Ke 0 0 0
+Ka 1 1 1
+Ks 0 0 0
+Ns 400
+Tr 0
+d 1
+Ni 1
+Tf 1 1 1
+
+newmtl Boots
+Kd 0.909804 0.909804 0.909804
+Ke 0 0 0
+Ka 0.7 0.7 0.7
+Ks 0.4 0.4 0.4
+Ns 400
+Tr 0
+d 1
+Ni 1
+Tf 1 1 1
+map_Kd E:TurboSquid/SpaceSuit/SpaceSuit_1005_Diffuse.png
+
+newmtl CONNECTOR
+Kd 0.784314 0.784314 0.784314
+Ke 0 0 0
+Ka 1 1 1
+Ks 0 0 0
+Ns 400
+Tr 0
+d 1
+Ni 1
+Tf 1 1 1
+
+newmtl Equipment
+Kd 0.909804 0.909804 0.909804
+Ke 0 0 0
+Ka 0.7 0.7 0.7
+Ks 0.4 0.4 0.4
+Ns 400
+Tr 0
+d 1
+Ni 1
+Tf 1 1 1
+map_Kd E:TurboSquid/SpaceSuit/SpaceSuit_1002_Diffuse.png
+
+newmtl FK_01
+Kd 0.784314 0.784314 0.784314
+Ke 0 0 0
+Ka 1 1 1
+Ks 0 0 0
+Ns 400
+Tr 0
+d 1
+Ni 1
+Tf 1 1 1
+
+newmtl finger_01
+Kd 0.784314 0.784314 0.784314
+Ke 0 0 0
+Ka 1 1 1
+Ks 0 0 0
+Ns 400
+Tr 0
+d 1
+Ni 1
+Tf 1 1 1
+
+newmtl Glass
+Kd 0.784314 0.784314 0.784314
+Ke 0 0 0
+Ka 0.6 0.6 0.6
+Ks 0.6 0.6 0.6
+Ns 400
+Tr 0.3
+d 0.7
+Ni 1
+Tf 1 1 1
+
+newmtl Gloves
+Kd 0.909804 0.909804 0.909804
+Ke 0 0 0
+Ka 0.7 0.7 0.7
+Ks 0.4 0.4 0.4
+Ns 400
+Tr 0
+d 1
+Ni 1
+Tf 1 1 1
+map_Kd E:TurboSquid/SpaceSuit/SpaceSuit_1004_Diffuse.png
+
+newmtl Helmet
+Kd 0.909804 0.909804 0.909804
+Ke 0 0 0
+Ka 0.7 0.7 0.7
+Ks 0.4 0.4 0.4
+Ns 400
+Tr 0
+d 1
+Ni 1
+Tf 1 1 1
+map_Kd E:TurboSquid/SpaceSuit/SpaceSuit_1001_Diffuse.png
+
+newmtl HelmetInner
+Kd 0.909804 0.909804 0.909804
+Ke 0 0 0
+Ka 0.7 0.7 0.7
+Ks 0.4 0.4 0.4
+Ns 400
+Tr 0
+d 1
+Ni 1
+Tf 1 1 1
+map_Kd E:TurboSquid/SpaceSuit/SpaceSuit_1006_Diffuse.png
+
+newmtl legfoot01
+Kd 0.784314 0.784314 0.784314
+Ke 0 0 0
+Ka 1 1 1
+Ks 0 0 0
+Ns 400
+Tr 0
+d 1
+Ni 1
+Tf 1 1 1
+
+newmtl MetallicParts_1
+Kd 0.909804 0.909804 0.909804
+Ke 0 0 0
+Ka 0.7 0.7 0.7
+Ks 0.4 0.4 0.4
+Ns 400
+Tr 0
+d 1
+Ni 1
+Tf 1 1 1
+
+newmtl MetallicParts_2
+Kd 0.909804 0.909804 0.909804
+Ke 0 0 0
+Ka 0.7 0.7 0.7
+Ks 0.4 0.4 0.4
+Ns 400
+Tr 0
+d 1
+Ni 1
+Tf 1 1 1
+
+newmtl root_01
+Kd 0.784314 0.784314 0.784314
+Ke 0 0 0
+Ka 1 1 1
+Ks 0 0 0
+Ns 400
+Tr 0
+d 1
+Ni 1
+Tf 1 1 1
+
+newmtl Suit
+Kd 0.909804 0.909804 0.909804
+Ke 0 0 0
+Ka 0.7 0.7 0.7
+Ks 0.4 0.4 0.4
+Ns 400
+Tr 0
+d 1
+Ni 1
+Tf 1 1 1
+map_Kd E:TurboSquid/SpaceSuit/SpaceSuit_1003_Diffuse.png
+
