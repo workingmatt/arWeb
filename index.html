@@ -6,11 +6,12 @@
 <body>
 	<a-scene arjs="debugUIEnabled: false; markersAreasEnabled: false;" vr-mode-ui="enabled: false">
 		<a-assets>
-			<a-asset-item id='spacesuit' src='SpaceSuit.obj'></a-asset-item>
+			<a-asset-item id='spacesuit-obj' src='SpaceSuit.obj'></a-asset-item>
+			<a-asset-item id='spacesuit-mtl' src='SpaceSuit.mtl'></a-asset-item>
 		</a-assets>
 
 		<a-marker type='pattern' url='diamondMarker.patt'>
-			<a-obj-model src="#spacesuit" scale="0.1 0.1 0.1" position="0 1 0" rotation="-90 0 0"></a-obj-model>
+			<a-obj-model src="#spacesuit-obj" mtl="#spacesuit-mtl" scale="0.1 0.1 0.1" position="0 1 0" rotation="-90 0 0"></a-obj-model>
 		</a-marker>
 	</a-scene>
 
