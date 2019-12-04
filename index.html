@@ -5,6 +5,59 @@
 </head>
 <body>
 
+	<a-scene arjs="debugUIEnabled: false; markersAreasEnabled: false;" vr-mode-ui="enabled: false">
+		<a-assets>
+			<img id='chanzaChanzoImage' src='c2.png'>
+		</a-assets>
+
+		<a-marker type='pattern' url='./markers/pattern-1DamienHirst.patt'>
+			<a-plane id='dam' scale='4 2 1' position='0 1 0' rotation='-90 0 0' src='#chanzaChanzoImage' material='opacity: 1'></a-plane>
+		</a-marker>
+		<a-marker type='pattern' url='./markers/pattern-2JennySaville.patt'>
+			<a-plane id='jen' scale='4 2 1' position='0 1 0' rotation='-90 0 0' src='#chanzaChanzoImage' material='opacity: 1'></a-plane>
+		</a-marker>
+		<a-marker type='pattern' url='./markers/pattern-3DavidHockney.patt'>
+			<a-plane id='dav' scale='4 2 1' position='0 1 0' rotation='-90 0 0' src='#chanzaChanzoImage' material='opacity: 1'></a-plane>
+		</a-marker>
+		<a-marker type='pattern' url='./markers/pattern-4TakashiMurakami.patt'>
+			<a-plane id='tak' scale='4 2 1' position='0 1 0' rotation='-90 0 0' src='#chanzaChanzoImage' material='opacity: 1'></a-plane>
+		</a-marker>
+		<a-marker type='pattern' url='./markers/pattern-5YayoiKusama.patt'>
+			<a-plane id='yay' scale='4 2 1' position='0 1 0' rotation='-90 0 0' src='#chanzaChanzoImage' material='opacity: 1'></a-plane>
+		</a-marker>
+		<a-marker type='pattern' url='./markers/pattern-6JeffKoons.patt'>
+			<a-plane id='jef' scale='4 2 1' position='0 1 0' rotation='-90 0 0' src='#chanzaChanzoImage' material='opacity: 1'></a-plane>
+		</a-marker>
+		<a-marker type='pattern' url='./markers/pattern-7AiWeiwei.patt'>
+			<a-plane id='wei' scale='4 2 1' position='0 1 0' rotation='-90 0 0' src='#chanzaChanzoImage' material='opacity: 1'></a-plane>
+		</a-marker>
+		<a-marker type='pattern' url='./markers/pattern-8CecilyBrown.patt'>
+			<a-plane id='cec' scale='4 2 1' position='0 1 0' rotation='-90 0 0' src='#chanzaChanzoImage' material='opacity: 1'></a-plane>
+		</a-marker>
+		<a-marker type='pattern' url='./markers/pattern-9AnselmKeifer.patt'>
+			<a-plane id='ans' scale='4 2 1' position='0 1 0' rotation='-90 0 0' src='#chanzaChanzoImage' material='opacity: 1'></a-plane>
+		</a-marker>
+		<a-marker type='pattern' url='./markers/pattern-10KaraWalker.patt'>
+			<a-plane id='kar' scale='4 2 1' position='0 1 0' rotation='-90 0 0' src='#chanzaChanzoImage' material='opacity: 1'></a-plane>
+		</a-marker>
+		<a-marker type='pattern' url='./markers/pattern-11AnishKapoor.patt'>
+			<a-plane id='ani' scale='4 2 1' position='0 1 0' rotation='-90 0 0' src='#chanzaChanzoImage' material='opacity: 1'></a-plane>
+		</a-marker>
+		<a-entity camera></a-entity>
+	</a-scene>
+
+	<script src="jquery-3.2.1.min.js"></script>
+	<script src="client.js"></script>
+
+</body>
+
+</html>
+
+<!--
+
+			<a-image src='#scream' side='double' rotation='-90 0 0'></a-image>
+			<a-entity gltf-model="#mask"></a-entity>
+-->
 <!--
 	<a-assets>
 		<a-asset-item id='wolf' src='Wolf.obj'></a-asset-item>
@@ -16,47 +69,6 @@
 
 	<a-animation attribute='rotation' to='0 0 360' dur='15000' easing='linear' repeat='indefinite'></a-animation>
 -->
-
-	<a-scene arjs="debugUIEnabled: false; markersAreasEnabled: false;" vr-mode-ui="enabled: false">
-
-		<a-assets>
-			<img id='resortTexture' src='c2.png'>
-		</a-assets>
-
-		<a-marker type='pattern' url='./markers/pattern-1DamienHirst.patt'>
-			<a-plane id='dam' scale='4 2 1' position='0 1 0' rotation='-90 0 0' src='#resortTexture' material='opacity: 1'></a-plane>
-		</a-marker>
-		<a-marker type='pattern' url='./markers/pattern-2JennySaville.patt'>
-			<a-plane id='jen' scale='4 2 1' position='0 1 0' rotation='-90 0 0' src='#resortTexture' material='opacity: 1'></a-plane>
-		</a-marker>
-		<a-marker type='pattern' url='./markers/pattern-3DavidHockney.patt'>
-			<a-plane id='dav' scale='4 2 1' position='0 1 0' rotation='-90 0 0' src='#resortTexture' material='opacity: 1'></a-plane>
-		</a-marker>
-		<a-marker type='pattern' url='./markers/pattern-4TakashiMurakami.patt'>
-			<a-plane id='tak' scale='4 2 1' position='0 1 0' rotation='-90 0 0' src='#resortTexture' material='opacity: 1'></a-plane>
-		</a-marker>
-		<a-marker type='pattern' url='./markers/pattern-5YayoiKusama.patt'>
-			<a-plane id='yay' scale='4 2 1' position='0 1 0' rotation='-90 0 0' src='#resortTexture' material='opacity: 1'></a-plane>
-		</a-marker>
-		<a-marker type='pattern' url='./markers/pattern-6JeffKoons.patt'>
-			<a-plane id='jef' scale='4 2 1' position='0 1 0' rotation='-90 0 0' src='#resortTexture' material='opacity: 1'></a-plane>
-		</a-marker>
-		<a-marker type='pattern' url='./markers/pattern-7AiWeiwei.patt'>
-			<a-plane id='wei' scale='4 2 1' position='0 1 0' rotation='-90 0 0' src='#resortTexture' material='opacity: 1'></a-plane>
-		</a-marker>
-		<a-marker type='pattern' url='./markers/pattern-8CecilyBrown.patt'>
-			<a-plane id='cec' scale='4 2 1' position='0 1 0' rotation='-90 0 0' src='#resortTexture' material='opacity: 1'></a-plane>
-		</a-marker>
-		<a-marker type='pattern' url='./markers/pattern-9AnselmKeifer.patt'>
-			<a-plane id='ans' scale='4 2 1' position='0 1 0' rotation='-90 0 0' src='#resortTexture' material='opacity: 1'></a-plane>
-		</a-marker>
-		<a-marker type='pattern' url='./markers/pattern-10KaraWalker.patt'>
-			<a-plane id='kar' scale='4 2 1' position='0 1 0' rotation='-90 0 0' src='#resortTexture' material='opacity: 1'></a-plane>
-		</a-marker>
-		<a-marker type='pattern' url='./markers/pattern-11AnishKapoor.patt'>
-			<a-plane id='ani' scale='4 2 1' position='0 1 0' rotation='-90 0 0' src='#resortTexture' material='opacity: 1'></a-plane>
-		</a-marker>
-
 <!--
 		<a-assets>
 			<img id='resortTexture' src='resort-logo.jpg'>
@@ -100,17 +112,3 @@
 			</a-box>
 		</a-marker>
 -->
-		<a-entity camera></a-entity>
-	</a-scene>
-
-<!--
-
-			<a-image src='#scream' side='double' rotation='-90 0 0'></a-image>
-			<a-entity gltf-model="#mask"></a-entity>
--->
-
-	<script src="jquery-3.2.1.min.js"></script>
-	<script src="client.js"></script>
-</body>
-
-</html>

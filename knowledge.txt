@@ -1,8 +1,44 @@
-heroku run bash --remote heroku
-Runs a shell on heroku so you can see any build errors.
+Heroku Instances
+prick-image-ar
+chanza-chanzo-ar https://chanza-chanzo-ar.herokuapp.com/ diamond marker
+the-world-is-yours https://the-world-is-yours.herokuapp.com/ 11 QR style markers
+ancient-caverns-23781 iCell Game (not AR)
 
 
 
+------------------
+20191204 PrickImage
+------------------
+Set up simple gltf AR instance for Shaun.
+
+First set up a new heroku instance
+sign In www.heroku.com HK
+Create app called prick-image-ar
+Deployment method Heroku Git
+
+In a Terminal
+cd to augmentedRealityWeb folder
+check all up to date git status etc.
+git tag <name> to mark the commit in a recognisable way
+
+git remote rename heroku heroku-oldAR
+heroku git:remote -a prick-image-ar
+git push heroku master
+
+Visit the app running at https://prick-image-ar.herokuapp.com/
+
+Create a bespoke pattern using the following online tool. Keep the pattern ratio at 0.5 (some experimentation in the future).
+https://jeromeetienne.github.io/AR.js/three.js/examples/marker-training/examples/generator.html
+
+Alter index.html to do what you need in the virtual world.
+git add .
+git commit -m "message on why the changes were needed"
+git push origin master
+git push heroku master
+
+------------------
+The World Is Yours
+------------------
 15-10-2019 Taking over from Sam Burford.
 
 	Refresher on workflow
@@ -19,16 +55,19 @@ Runs a shell on heroku so you can see any build errors.
 		git remote -v lists the remotes set up.
 		git remote rename heroku heroku-kim
 		heroku git:remote -a the-world-is-yours
-		git push origin master
+		git push heroku master
 
 		https://the-world-is-yours.herokuapp.com/
 
-	
-
-The World Is Yours
+heroku run bash --remote heroku
+Runs a shell on heroku so you can see any build errors.
 
 ------------------
 Kim Conway - no notes, see above.
+------------------
+
+------------------
+Initial setup and playing
 ------------------
 First find: http://www.makery.info/en/2017/10/17/integrer-la-realite-augmentee-sur-le-web-en-dix-lignes-de-code/
 
