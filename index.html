@@ -4,8 +4,25 @@
 	<script src="https://jeromeetienne.github.io/AR.js/aframe/build/aframe-ar.js"></script>
 </head>
 <body>
-
+		
 	<a-scene arjs="debugUIEnabled: false; markersAreasEnabled: false;" vr-mode-ui="enabled: false">
+		<a-assets>
+			<a-asset-item id='spacesuit' src='SpaceSuit.obj'></a-asset-item>
+		</a-assets>
+
+		<a-marker type='pattern' url='diamondMarker.patt'>
+			<a-obj-model src="#spacesuit" scale="0.01 0.01 0.01" position="0 1 0"></a-obj-model>
+		</a-marker>
+	</a-scene>
+
+	<script src="jquery-3.2.1.min.js"></script>
+	<script src="client.js"></script>
+
+</body>
+
+</html>
+<!--
+<a-scene arjs="debugUIEnabled: false; markersAreasEnabled: false;" vr-mode-ui="enabled: false">
 		<a-assets>
 			<img id='chanzaChanzoImage' src='c2.png'>
 		</a-assets>
@@ -45,14 +62,7 @@
 		</a-marker>
 		<a-entity camera></a-entity>
 	</a-scene>
-
-	<script src="jquery-3.2.1.min.js"></script>
-	<script src="client.js"></script>
-
-</body>
-
-</html>
-
+	-->
 <!--
 
 			<a-image src='#scream' side='double' rotation='-90 0 0'></a-image>
