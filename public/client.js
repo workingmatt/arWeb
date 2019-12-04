@@ -3,17 +3,17 @@
 //Delete all image folder contents
 //Rerun script
 
-refreshArtist("jen");
-refreshArtist("tak");
-refreshArtist("dav");
-refreshArtist("wei");
-refreshArtist("dam");
-refreshArtist("yay");
-refreshArtist("jef");
-refreshArtist("cec");
-refreshArtist("ans");
-refreshArtist("kar");
-refreshArtist("ani");
+// refreshArtist("jen");
+// refreshArtist("tak");
+// refreshArtist("dav");
+// refreshArtist("wei");
+// refreshArtist("dam");
+// refreshArtist("yay");
+// refreshArtist("jef");
+// refreshArtist("cec");
+// refreshArtist("ans");
+// refreshArtist("kar");
+// refreshArtist("ani");
 
 var index = 0;
 var maxIndex = 25;
