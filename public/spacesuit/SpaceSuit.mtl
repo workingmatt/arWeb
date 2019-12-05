@@ -19,7 +19,7 @@ Tr 0
 d 1
 Ni 1
 Tf 1 1 1
-map_Kd ./SpaceSuit_1005_Diffuse.png
+map_Kd //SpaceSuit_1005_Diffuse.png
 
 newmtl CONNECTOR
 Kd 0.784314 0.784314 0.784314
@@ -42,7 +42,7 @@ Tr 0
 d 1
 Ni 1
 Tf 1 1 1
-map_Kd ./SpaceSuit_1002_Diffuse.png
+map_Kd //SpaceSuit_1002_Diffuse.png
 
 newmtl FK_01
 Kd 0.784314 0.784314 0.784314
@@ -87,7 +87,7 @@ Tr 0
 d 1
 Ni 1
 Tf 1 1 1
-map_Kd ./SpaceSuit_1004_Diffuse.png
+map_Kd //SpaceSuit_1004_Diffuse.png
 
 newmtl Helmet
 Kd 0.909804 0.909804 0.909804
@@ -99,7 +99,7 @@ Tr 0
 d 1
 Ni 1
 Tf 1 1 1
-map_Kd ./SpaceSuit_1001_Diffuse.png
+map_Kd //SpaceSuit_1001_Diffuse.png
 
 newmtl HelmetInner
 Kd 0.909804 0.909804 0.909804
@@ -111,7 +111,7 @@ Tr 0
 d 1
 Ni 1
 Tf 1 1 1
-map_Kd ./SpaceSuit_1006_Diffuse.png
+map_Kd //SpaceSuit_1006_Diffuse.png
 
 newmtl legfoot01
 Kd 0.784314 0.784314 0.784314
@@ -167,5 +167,5 @@ Tr 0
 d 1
 Ni 1
 Tf 1 1 1
-map_Kd ./SpaceSuit_1003_Diffuse.png
+map_Kd //SpaceSuit_1003_Diffuse.png
 
