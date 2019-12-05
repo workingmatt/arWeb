@@ -6,12 +6,15 @@
 <body>
 	<a-scene arjs="debugUIEnabled: false; markersAreasEnabled: false;" vr-mode-ui="enabled: false">
 		<a-assets>
-			<a-asset-item id='spacesuit-obj' src='SpaceSuit.obj'></a-asset-item>
-			
+			<a-asset-item id='spacesuit-obj' src='./spacesuit/SpaceSuit.obj'></a-asset-item>
+			<a-asset-item id='spacesuit-mtl' src='./spacesuit/SpaceSuit.mtl'></a-asset-item>
 		</a-assets>
 
 		<a-marker type='pattern' url='diamondMarker.patt'>
-			<a-obj-model src="#spacesuit-obj" scale="1 1 1" position="0 1 0" rotation="-90 0 0"></a-obj-model>
+			<a-box scale='1 1 1' position='0 0 0' material='opacity:0;'>
+				<a-entity obj-model='obj: #spacesuit-obj; #spacesuit-mtl' rotation='-90 0 0' position='0 0 0' scale='1 0.75 1'></a-entity>
+				<a-animation attribute='rotation' to='0 0 359' dur='15000' easing='linear' repeat='indefinite'></a-animation>
+			</a-box>
 		</a-marker>
 	</a-scene>
 
@@ -22,6 +25,19 @@
 
 </html>
 <!--
+
+			<a-obj-model src="#spacesuit-obj" scale="1 0.75 1" position="0 1 1" rotation="-90 0 0"></a-obj-model>
+			<a-animation attribute='rotation' to='0 0 359' dur='3000' easing='linear' repeat='indefinite'></a-animation>
+
+
+		<a-marker type='pattern' url='diamondMarker.patt'>
+			<a-box scale='0.1 0.1 0.1' position='0 0 0' material='opacity: 0;'>
+				<a-entity gltf-model="#Head2" rotation='270 0 0' position='0 0 35' scale='0.3 0.3 0.3'>
+				</a-entity>
+				<a-animation attribute='rotation' to='0 0 359' dur='15000' easing='linear' repeat='indefinite'></a-animation>
+			</a-box>
+		</a-marker>
+
 <a-scene arjs="debugUIEnabled: false; markersAreasEnabled: false;" vr-mode-ui="enabled: false">
 		<a-assets>
 			<img id='chanzaChanzoImage' src='c2.png'>
@@ -91,13 +107,6 @@
   			<a-asset-item id="placeholder" src="https://raw.githubusercontent.com/aframevr/sample-assets/master/assets/images/space/earth_atmos_4096.jpg"></a-asset-item>
 		</a-assets>
 
-		<a-marker type='pattern' url='diamondMarker.patt'>
-			<a-box scale='0.1 0.1 0.1' position='0 0 0' material='opacity: 0;'>
-				<a-entity gltf-model="#Head2" rotation='270 0 0' position='0 0 35' scale='0.3 0.3 0.3'>
-				</a-entity>
-				<a-animation attribute='rotation' to='0 0 359' dur='15000' easing='linear' repeat='indefinite'></a-animation>
-			</a-box>
-		</a-marker>
 
 		<a-marker preset='hiro'>
 			<a-sphere src='#sphereTexture' position='-3 0.5 -1' radius='0.5' material='opacity: 0.6;' color='#FF0000'>
